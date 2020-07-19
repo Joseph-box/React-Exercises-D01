@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 /**
  * Implement a simple function component that renders an html element
@@ -6,5 +6,5 @@ import React from 'react';
  */
 export default function HelloWorld() {
   // Your code here
- 
-} 
+  return <div>Hello World</div>;
+}

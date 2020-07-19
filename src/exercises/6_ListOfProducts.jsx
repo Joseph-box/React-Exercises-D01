@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 /**
  * Implement a simple function component that accepts "products" in props
@@ -10,4 +10,15 @@ import React from 'react'
  */
 export default function ListOfProducts(props) {
   // Your code
+  const items = [];
+
+  for (const product of props.products) {
+    items.push(
+      <li key={product.name}>
+        {product.name} {product.price == undefined ? "N/A" : product.price}
+      </li>
+    );
+  }
+
+  return <div>{items}</div>;
 }
